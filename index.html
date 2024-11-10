@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en"><!--اللغة التي يعمل بها الموقع -->
+	<head>
+		<meta charset="utf-8"><!--يدعم معظم لغات العالم-->
+		<title>Bootstrap E-commerce Templates</title><!--العنوان-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ملائمة الشاشة التي تفتحها-->
+		<meta name="description" content=""><!-- الصفحة تظهر بحجمها الطبيعي-->
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"><!--يربط cssبالبوت ستراب-->
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"><!--يربط cssبتصاميم البوت ستراب-->
+		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/><!--يربط cssبالبوت ستراب-->
+		
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/><!-- يربط css ينلف  لانشاء شرائح جذابة-->
+		<link href="themes/css/main.css" rel="stylesheet"/><!--ربط ملف css مع ملف فيه تنسيقات-->
+
+		<!-- scripts -->
+		<script src="themes/js/jquery-1.7.2.min.js"></script><!--ربط ملف الجافا-->
+		<script src="bootstrap/js/bootstrap.min.js"></script><!--جافا مع بوتستراب-->				
+		<script src="themes/js/superfish.js"></script>	<!--جافا مع قوائم منسدلة-->
+		<script src="themes/js/jquery.scrolltotop.js"></script><!--وظيفة التمرير -->
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+    <body>		
+		<div id="top-bar" class="container"><!--البار العلوي-->
+			<div class="row">
+				<div class="span4"><!--تُطبق أنماط  الخاصة بالأعمدة، مما يجعل هذا العمود يأخذ 4 أجزاء من أصل 12 جزءًا في الشبكة.-->
+					<form method="POST" class="search_form"><!--نموذج بحث-->
+						<input type="text" class="input-block-level search-query" 
+						Placeholder="eg. T-sirt"><!--حقل ادخال نص--><!--نص توضيحي-->
+					</form>
+				</div>
+				<div class="span8"><!--يجعل هذا العمود يأخذ 8 أجزاء من أصل 12 جزءًا في الشبكة.
+					هذا العمود يمكن استخدامه لوضع محتوى إضافي بجانب العمود الذي يأخذ 4 أجزاء (span4) الذي شرحناه سابقًا.-->
+					<div class="account pull-right"><!--قسم الحساب-->
+						<ul class="user-menu"><!--هذا العنصر يُمثل قائمة غير مرتبة لعناصر قائمة المستخدم.-->	
+							<li><a href="#">My Account</a></li><!--عنصر قائمة يحتوي على رابط إلى صفحة “حسابي”.-->
+							<li><a href="cart.html">Your Cart</a></li><!--عنصر قائمة يحتوي على رابط إلى صفحة “عربة التسوق”.-->
+							<li><a href="checkout.html">Checkout</a></li><!--عنصر قائمة يحتوي على رابط إلى صفحة “الدفع”.-->			
+							<li><a href="register.html">Login</a></li>		<!--عنصر قائمة يحتوي على رابط إلى صفحة “تسجيل الدخول”.-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu"><!--تنظيم شريط تنقل-->
+				<div class="navbar-inner main-menu">				
+					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a><!--رابط يحوي صورة الشعار-->
+					<nav id="menu" class="pull-right"><!--إنشاء قائمة تنقل تحتوي على روابط إلى صفحات مختلفة في الموقع. وضعه على اليمين يمكن أن يكون مفيدًا لتصميمات معينة-->
+						
+						<a href="./products.html">Woman</a>	<!--عنصر قائمة يحتوي على رابط إلى صفحة المنتجات الخاصة بالنساء. -->				
+								
+																						
+					</nav>
+				</div>
+			</section>
+			<section  class="homepage-slider" id="home-slider"><!--لإنشاء قسم يحتوي على شريط تمرير  في الصفحة الرئيسية-->
+				<div class="flexslider"><!--صورة واحدة لكل شريحة-->
+					<ul class="slides">
+						<li>
+							<img src="themes\images\carousel\banner-1.avif" alt="" />
+						</li>
+						<li>
+							<img src="themes\images\carousel\banner-2.avif" alt="" />
+							<div class="intro"><!--قسمًا ترويجيًا لموقعك. هذا الكود يعرض إعلانًا عن تخفيضات منتصف الموسم-->
+								<h1>Buy online at the best price</h1><!--عبارات على الصورة-->
+								<p><span>Customer satisfaction is our only goal</span></p>
+								<p><span>Don't be traditional</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>			
+			</section>
+			<section class="header_text"><!--نصيًا في رأس الصفحة.تحت الصور-->
+				Let your home furnishings speak for you. With our furnishings, you will get the home of your dreams.
+				<br/>Every piece of furniture we have tells the story of how special you are.
+				<br/> Don't miss the opportunity.
+			</section>
+			<section class="main-content"><!--إضافة قسم رئيسي لموقعك-->
+				<div class="row">
+					<div class="span12">													
+						<div class="row">
+							<div class="span12">
+								<h4 class="title"><!--تضيف عنوانًا لقسم المنتجات المميزة مع أزرار للتنقل في شريط التمرير .-->
+									<span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span><!--العناصر المميزة-->
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel" class="myCarousel carousel slide">
+									<div class="carousel-inner"><!--تضيف قسم الشرائح الداخلية لشريط التمرير-->
+										<div class="active item"><!--أنك تضيف شريحة نشطة إلى شريط التمرير-->
+											<ul class="thumbnails"><!--يبدو أنك تضيف قائمة من الصور المصغرة-->										
+												<li class="span3"><!--بدو أنك تضيف عنصر قائمة لعرض منتج في موقعك.-->
+													<div class="product-box"><!--عنصر-->
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="themes\images\ladies\1.avif" alt="" /></a></p><!--صورة المنتج-->
+														<a href="product_detail.html" class="title">wardrobe</a><br/><!--اسم المنتج-->
+														<a href="product_detail.html" class="category">Grey, 258x55x199 cm</a><!--معلومات المنتج-->
+														<p class="price">1700.25$</p><!--السعر-->
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<span class="sale_tag"></span>
+														<p><a href="bedroom.html"><img src="themes\images\ladies\2.avif" alt="" /></a></p>
+														<a href="bedroom.html" class="title">bedroom</a><br/>
+														<a href="bedroom.html" class="category">Black 180x200 cm</a>
+														<p class="price">3200.50$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="3 seater sofa.html"><img src="themes\images\ladies\3.avif" alt="" /></a></p>
+														<a href="3 seater sofa.html" class="title">3 seater sofa, with chaise longue</a><br/>
+														<a href="3 seater sofa.html" class="category">Yellow, 230x70x50cm</a>
+														<p class="price">1400.20$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="extendable table.html"><img src="themes\images\ladies\4.avif" alt="" /></a></p>
+														<a href="extendable table.html" class="title">extendable table</a><br/>
+														<a href="extendable table.html" class="category">White, 110/155 cm</a>
+														<p class="price">310.45$</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Baby crib.html"><img src="themes\images\ladies\5.webp" alt="" /></a></p>
+														<a href="Baby crib.html" class="title">Baby crib with drawer</a><br/>
+														<a href="Baby crib.html " class="category">White, 60x120 cm</a>
+														<p class="price">222.30$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="office chair.html"><img src="themes\images\ladies\6.avif" alt="" /></a></p>
+														<a href="office chair.html" class="title">office chair</a><br/>
+														<a href="office chair.html" class="category">Grey, 105 x 60 cm</a>
+														<p class="price">400.25$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Corner library.html"><img src="themes\images\ladies\7.webp" alt="" /></a></p>
+														<a href="Corner library.html" class="title">Corner library with extension units</a><br/>
+														<a href="Corner library.html" class="category">Brown 136/136x28x237 cm</a>
+														<p class="price">550$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Dining table.html"><img src="themes\images\ladies\8.webp" alt="" /></a></p>
+														<a href="Dining table.html" class="title">Dining table and 6 chairs</a><br/>
+														<a href="Dining table.html" class="category">Black, Blue 235x100 cm</a>
+														<p class="price">2500$</p>
+													</div>
+												</li>																																	
+											</ul>
+										</div>
+									</div>							
+								</div>
+							</div>						
+						</div>
+						<br/>
+						<div class="row">
+							<div class="span12">
+								<h4 class="title"><!--عنوانًا لقسم المنتجات الأحدث مع أزرار للتنقل في شريط التمرير-->
+									<span class="pull-left"><span class="text"><span class="line">Latest <strong>Products</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel-2" data-slide="prev"></a><a class="right button" href="#myCarousel-2" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel-2" class="myCarousel carousel slide"><!--شريط تمرير جديد -->
+									<div class="carousel-inner"><!--قسم الشرائح الداخلية لشريط التمرير-->
+										<div class="active item">
+											<ul class="thumbnails">												
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<span class="sale_tag"></span>
+														<p><a href="Bed with two mattresses.html"><img src="themes\images\cloth\2.avif" alt="" /></a></p>
+														<a href="Bed with two mattresses.html" class="title">Bed with two mattresses and 3 drawers</a><br/>
+														<a href="Bed with two mattresses.html" class="category">White, 80x200 cm</a>
+														<p class="price">1750$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="8 drawer chest.html"><img src="themes\images\cloth\1.avif" alt="" /></a></p>
+														<a href="8 drawer chest.html" class="title">8 drawer chest</a><br/>
+														<a href="8 drawer chest.html" class="category">Grey, 160x96 cm</a>
+														<p class="price">850$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Royal Mirror.html"><img src="themes\images\cloth\6.avif" alt="" /></a></p>
+														<a href="Royal Mirror.html" class="title">Royal Mirror</a><br/>
+														<a href="Royal Mirror.html" class="category">66x80 cm</a>
+														<p class="price">320$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Children's table.html"><img src="themes\images\cloth\5.avif" alt="" /></a></p>
+														<a href="Children's table.html" class="title">Children's table</a><br/>
+														<a href="Children's table.html" class="category">Light blue, 85 cm</a>
+														<p class="price">250.60$</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Relaxing sofa.html"><img src="themes\images\cloth\4.avif"alt="" /></a></p>
+														<a href="Relaxing sofa.html" class="title">Relaxing sofa</a><br/>
+														<a href="Relaxing sofa.html" class="category">Light brown, 190x70 cm</a>
+														<p class="price">450.50$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Table and 2 chairs.html"><img src="themes\images\cloth\3.avif" alt="" /></a></p>
+														<a href="Table and 2 chairs.html" class="title">Table and 2 chairs</a><br/>
+														<a href="Table and 2 chairs.html" class="category">Green, 90x62 cm</a>
+														<p class="price">650$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="Sideboard.html"><img src="themes\images\cloth\7.avif" alt="" /></a></p>
+														<a href="Sideboard.html" class="title">Sideboard</a><br/>
+														<a href="Sideboard.html" class="category">White, 78x92 cm</a>
+														<p class="price">825$</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box"><!--عنصر-->
+														<p><a href="wardrobe.html"><img src="themes\images\cloth\8.avif" alt="" /></a></p>
+														<a href="wardrobe.html" class="title">wardrobe</a><br/>
+														<a href="wardrobe.html" class="category">Dark brown, 180x59x211 cm</a>
+														<p class="price">1375$</p>
+													</div>
+												</li>																																	
+											</ul>
+										</div>
+									</div>							
+								</div>
+							</div>						
+						</div>
+						<div class="row feature_box">						
+							<div class="span4"><!--عنصر لملائمة عرض الموقع مع كل الشاشات-->
+								<div class="service">
+									<div class="responsive"><!--عرض صورة مع عنوان نصي وبعض النصوص التوضيحية.-->
+										<img src="themes/images/feature_img_2.png" alt="" />
+										<h4><strong>Settings</strong></h4>
+										<p>General settings to make your browsing of the site easier</p>									
+									</div>
+								</div>
+							</div>
+							<div class="span4">	
+								<div class="service">
+									<div class="customize"><!--هذا القسم يعرض معلومات حول عرض شحن مجاني، بما في ذلك صورة مصاحبة وبعض النصوص التوضيحية-->			
+										<img src="themes/images/feature_img_1.png" alt="" />
+										<h4>FREE <strong>SHIPPING</strong></h4>
+										<p>Products at prices you won't find in your city store with free delivery</p>
+									</div>
+								</div>
+							</div>
+							<div class="span4">
+								<div class="service">
+									<div class="support"><!--هذا القسم يعرض معلومات حول الدعم المباشر على مدار الساعة طوال أيام الأسبوع، متضمنًا صورة ونصوصًا توضيحية-->
+										<img src="themes/images/feature_img_3.png" alt="" />
+										<h4>24/24 LIVE <strong>SUPPORT</strong></h4>
+										<p>We are ready to meet your requests around the clock, anytime and anywhere, Free returns within 90 days Shop and start saving</p>
+									</div>
+								</div>
+							</div>	
+						</div>		
+					</div>				
+				</div>
+			</section>
+			
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3"><!--هذا القسم من الكود يعرض قائمة تنقل مع روابط إلى صفحات مختلفة من الموقع-->
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="./index.html">Homepage</a></li>  
+							<li><a href="./contact.html">Contac Us</a></li>
+							<li><a href="./cart.html">Your Cart</a></li>
+							<li><a href="./register.html">Login</a></li>							
+						</ul>					
+					</div>
+					
+					<div class="span5"><!-- نضع شعار الموقع.وعبارة-->
+						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
+						<br/>
+						
+					</div>					
+				</div>	
+			</section>
+			<section id="copyright"><!--هذا النص يعرض إشعار حقوق النشر للسنة 2024 ويشير إلى أن جميع الحقوق محفوظة لموقع -->
+				<span>Copyright 2024 hooooooome  All right reserved.</span>
+			</section>
+		</div>
+		<script src="themes/js/common.js"></script><!--وظائف وعناصر تفاعلية لتحسين تجربة المستخدم على موقعك-->
+		<script src="themes/js/jquery.flexslider-min.js"></script><!--وظائف وعناصر تفاعلية لتحسين تجربة المستخدم على موقعك-->
+		<script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 4000,
+						animationSpeed: 600,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});<!--هذا الكود ينشئ عرضًا شرائحيًا  متجاوبًا للصور مع إعدادات مخصصة.-->
+		</script>
+    </body>
+</html>
